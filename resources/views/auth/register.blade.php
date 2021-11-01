@@ -1,6 +1,6 @@
 @extends('layouts.auth')
-@section('pagename', 'Create an account')
+@section('pagename', __('payview.pagename.register'))
 
 @section('content')
-    Register.
+    @lang('payview.pagename.register')
 @endsection
