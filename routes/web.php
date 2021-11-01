@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AppController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\IndexController;
 use Illuminate\Support\Facades\Route;
@@ -25,6 +26,6 @@ Route::prefix('auth')->name('auth.')->group(function () {
 });
 
 Route::prefix('app')->name('app.')->group(function () {
-    // Overview
-    // Settings (Personal, Category)
+    Route::get('dashboard', [AppController::class, 'dashboard'])->name('dashboard');
+    Route::get('settings', [AppController::class, 'settings'])->name('settings');
 });
