@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\AppController;
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\IndexController;
 use Illuminate\Support\Facades\Route;
 
@@ -15,3 +17,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [IndexController::class, 'index'])->name('index');
+
+Route::prefix('auth')->name('auth.')->group(function () {
+    Route::match(array('get', 'post'), 'login', [AuthController::class, 'login'])->name('login');
+    Route::match(array('get', 'post'), 'register', [AuthController::class, 'register'])->name('register');
+    Route::match(array('get', 'post'), 'activate', [AuthController::class, 'activate'])->name('activate');
+    Route::match(array('get', 'post'), 'logout', [AuthController::class, 'logout'])->name('logout');
+});
+
+Route::prefix('app')->name('app.')->group(function () {
+    Route::get('dashboard', [AppController::class, 'dashboard'])->name('dashboard');
+    Route::get('settings', [AppController::class, 'settings'])->name('settings');
+});
