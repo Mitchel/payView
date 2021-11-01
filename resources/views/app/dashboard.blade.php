@@ -1,6 +1,6 @@
-@extends('layouts.app')
-@section('pagename', 'Dashboard')
+@extends('layouts.auth')
+@section('pagename', __('payview.pagename.dashboard'))
 
 @section('content')
-    Dashboard
+    @lang('payview.pagename.dashboard')
 @endsection
