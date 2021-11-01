@@ -18,11 +18,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [IndexController::class, 'index'])->name('index');
 
 Route::prefix('auth')->name('auth.')->group(function () {
-    // Login
     Route::match(array('get', 'post'), 'login', [AuthController::class, 'login'])->name('login');
-    // Register
-    // Activate
-    // Logout
+    Route::match(array('get', 'post'), 'register', [AuthController::class, 'register'])->name('register');
+    Route::match(array('get', 'post'), 'activate', [AuthController::class, 'activate'])->name('activate');
+    Route::match(array('get', 'post'), 'logout', [AuthController::class, 'logout'])->name('logout');
 });
 
 Route::prefix('data')->name('data.')->group(function () {
