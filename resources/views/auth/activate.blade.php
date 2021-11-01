@@ -1,6 +1,6 @@
 @extends('layouts.auth')
-@section('pagename', 'Activate')
+@section('pagename', __('payview.pagename.activate'))
 
 @section('content')
-    Activate.
+    @lang('payview.pagename.activate')
 @endsection
