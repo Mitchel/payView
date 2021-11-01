@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\IndexController;
 use Illuminate\Support\Facades\Route;
 
@@ -15,3 +16,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [IndexController::class, 'index'])->name('index');
+
+Route::prefix('auth')->name('auth.')->group(function () {
+    // Login
+    Route::match(array('get', 'post'), 'login', [AuthController::class, 'login'])->name('login');
+    // Register
+    // Activate
+    // Logout
+});
+
+Route::prefix('data')->name('data.')->group(function () {
+    // Overview
+    // Settings (Personal, Category)
+});
