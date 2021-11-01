@@ -24,7 +24,7 @@ Route::prefix('auth')->name('auth.')->group(function () {
     Route::match(array('get', 'post'), 'logout', [AuthController::class, 'logout'])->name('logout');
 });
 
-Route::prefix('data')->name('data.')->group(function () {
+Route::prefix('app')->name('app.')->group(function () {
     // Overview
     // Settings (Personal, Category)
 });
