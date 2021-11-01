@@ -4,3 +4,4 @@
 @section('content')
     @lang('payview.pagename.dashboard')
 @endsection
+
