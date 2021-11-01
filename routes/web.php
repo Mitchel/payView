@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\AppController;
 use App\Http\Controllers\AuthController;
-use App\Http\Controllers\IndexController;
+use App\Http\Controllers\PagesController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [IndexController::class, 'index'])->name('index');
+Route::get('/', [PagesController::class, 'index'])->name('index');
 
 Route::prefix('auth')->name('auth.')->group(function () {
     Route::match(array('get', 'post'), 'login', [AuthController::class, 'login'])->name('login');
