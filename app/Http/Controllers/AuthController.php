@@ -30,6 +30,15 @@ class AuthController extends Controller
         return view('auth.register');
     }
 
+    public function activate(Request $request)
+    {
+        if($request->isMethod('post')) {
+            // TODO: Post method for activate.
+        }
+
+        return view('auth.activate');
+    }
+
     public function logout()
     {
         auth()->logout();
