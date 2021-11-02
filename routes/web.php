@@ -21,7 +21,7 @@ Route::get('/', [PagesController::class, 'index'])->name('index');
 Route::prefix('auth')->name('auth.')->group(function () {
     Route::match(array('get', 'post'), 'login', [AuthController::class, 'login'])->name('login');
     Route::match(array('get', 'post'), 'register', [AuthController::class, 'register'])->name('register');
-    Route::match(array('get', 'post'), 'activate', [AuthController::class, 'activate'])->name('activate');
+    Route::match(array('get', 'post'), 'activate/{uuid}', [AuthController::class, 'activate'])->name('activate');
     Route::match(array('get', 'post'), 'logout', [AuthController::class, 'logout'])->name('logout');
 });
 
