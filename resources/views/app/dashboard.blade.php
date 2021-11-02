@@ -2,6 +2,11 @@
 @section('pagename', __('payview.pagename.dashboard'))
 
 @section('content')
-    @lang('payview.pagename.dashboard')
+    @if (session()->has('success'))
+        <div class="auth-card-body error success">
+            <strong>@lang('payview.auth.login.success')</strong>
+            {{ session('success') }}
+        </div>
+    @endif
 @endsection
 
