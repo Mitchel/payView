@@ -20,16 +20,30 @@
                 </div>
             @endif
 
+            @if (session()->has('success'))
+                <div class="auth-card-body error success">
+                    <strong>@lang('payview.auth.login.success')</strong>
+                    {{ session('success') }}
+                </div>
+            @endif
+
+            @if (session()->has('error'))
+                <div class="auth-card-body error">
+                    <strong>@lang('payview.auth.login.error')</strong>
+                    {{ session('error') }}
+                </div>
+            @endif
+
             <div class="auth-card-body">
                 @csrf
 
                 <div class="form-floating mb-3">
-                    <input type="email" class="form-control @error('email') is-invalid @enderror" id="email" name="email" value="{{ old('email') }}" placeholder="@lang('payview.auth.login.email')" required>
+                    <input type="email" class="form-control @error('email') is-invalid @enderror" id="email" name="email" value="{{ old('email') }}" placeholder="@lang('payview.auth.login.email')" autocomplete="off" required>
                     <label for="email">@lang('payview.auth.login.email') </label>
                 </div>
 
                 <div class="form-floating mb-3">
-                    <input type="password" class="form-control @error('password') is-invalid @enderror" id="password" name="password" placeholder="@lang('payview.auth.login.password')" required>
+                    <input type="password" class="form-control @error('password') is-invalid @enderror" id="password" name="password" placeholder="@lang('payview.auth.login.password')" autocomplete="off" required>
                     <label for="password">@lang('payview.auth.login.password')</label>
                 </div>
 
