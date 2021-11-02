@@ -18,9 +18,19 @@ class User extends Authenticatable
      * @var string[]
      */
     protected $fillable = [
-        'name',
+        'firstname',
+        'lastname',
         'email',
         'password',
+        'activation_token',
+    ];
+
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var string[]
+     */
+    protected $guarded = [
     ];
 
     /**
@@ -45,5 +55,17 @@ class User extends Authenticatable
     public function setPasswordAttribute($password)
     {
         $this->attributes['password'] = bcrypt($password);
+    }
+
+    public static function userByUuid($uuid)
+    {
+        return static::where('activation_token', $uuid)->first();
+    }
+
+    public function activateUser($user, $data = [])
+    {
+        $this->userByUuid($user)->update([
+            'activation_token'      => '',
+        ]);
     }
 }
