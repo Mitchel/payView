@@ -80,13 +80,21 @@ html.auth .auth-card .auth-card-body.error, body.auth .auth-card .auth-card-body
   margin: 10px 0 0 0;
   background: #f8d7da;
   color: #842026;
-  text-align: center;
   font-size: 12px;
-  padding: 15px 10px;
+  padding: 15px 20px;
+}
+html.auth .auth-card .auth-card-body.error li, body.auth .auth-card .auth-card-body.error li {
+  list-style-type: none;
 }
 html.auth .auth-card .auth-card-body.error strong, body.auth .auth-card .auth-card-body.error strong {
   display: block;
   font-size: 13px;
+}
+html.auth .auth-card .auth-card-body.error.success, body.auth .auth-card .auth-card-body.error.success {
+  border-top: 1px solid #badbcc;
+  border-bottom: 1px solid #badbcc;
+  background: #d1e7dd;
+  color: #0f5132;
 }
 html.auth .auth-card .auth-card-body.extra-padding, body.auth .auth-card .auth-card-body.extra-padding {
   padding: 30px 20px 10px 20px;
