@@ -24,6 +24,7 @@ mix.browserSync({
        'public/css/**/*',
        'public/**/*.+(html|php)',
        'resources/views/**/*.php',
+       'resources/views/app/*.php',
        'resources/lang/**/*.php'
     ],
 })

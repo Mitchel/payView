@@ -36,7 +36,7 @@ class AuthController extends Controller
 
                 session()->regenerate();
 
-                return redirect()->route('app.dashboard')->with('success', __('payview.auth.activate.dashboard'));
+                return redirect()->route('app.dashboard')->with('success', __('payview.auth.login.dashboard'));
             }
 
             throw ValidationException::withMessages([
@@ -78,7 +78,7 @@ class AuthController extends Controller
 
             $user->notify(new sendSuccessActivationNotification($user));
 
-            return redirect()->route('auth.login')->with('success', __('payview.auth.login.dashboard'));
+            return redirect()->route('auth.login')->with('success', __('payview.auth.activate.success'));
         }
 
         $user = User::userByUuid($uuid);

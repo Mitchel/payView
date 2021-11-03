@@ -1,6 +1,6 @@
-@extends('layouts.auth')
+@extends('layouts.app')
 @section('pagename', __('payview.pagename.settings'))
 
 @section('content')
-    @lang('payview.pagename.settings')
+    Password
 @endsection
