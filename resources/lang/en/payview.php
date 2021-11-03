@@ -2,11 +2,16 @@
 
 return [
     'pagename' => [
-        'login'             => 'Login with your account',
-        'register'          => 'Create an account',
-        'activate'          => 'Activate your account',
-        'dashboard'         => 'Dashboard',
-        'settings'          => 'Settings',
+        'login'                 => 'Login with your account',
+        'register'              => 'Create an account',
+        'activate'              => 'Activate your account',
+        'dashboard'             => 'Dashboard',
+        'settings'              => 'Settings',
+        'transactions' => [
+            'overview'          => 'Transactions Overview',
+            'month'             => 'Transactions: :month',
+            'year'              => 'Transactions: :year',
+        ],
     ],
 
     'auth' => [

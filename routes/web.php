@@ -3,6 +3,7 @@
 use App\Http\Controllers\AppController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\SettingsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,6 +27,17 @@ Route::prefix('auth')->name('auth.')->group(function () {
 });
 
 Route::prefix('app')->name('app.')->group(function () {
-    Route::get('dashboard', [AppController::class, 'dashboard'])->name('dashboard');
-    Route::get('settings', [AppController::class, 'settings'])->name('settings');
+    Route::get('/', [AppController::class, 'dashboard'])->name('dashboard');
+
+    Route::prefix('settings')->name('settings.')->group(function () {
+        Route::get('/', [SettingsController::class, 'overview'])->name('overview');
+        Route::match(array('get', 'post'), 'email', [SettingsController::class, 'email'])->name('email');
+        Route::match(array('get', 'post'), 'password', [SettingsController::class, 'password'])->name('password');
+    });
+
+    Route::prefix('transactions')->name('transactions.')->group(function () {
+        Route::get('/', [AppController::class, 'transactions'])->name('overview');
+        Route::get('month/{month}', [AppController::class, 'transactionsMonth'])->name('month');
+        Route::get('year/{year}', [AppController::class, 'transactionsYear'])->name('year');
+    });
 });

@@ -27,37 +27,33 @@
     width: 80% !important;
   }
 }
-html, body {
-  margin: 0;
-  padding: 0;
-  background: rgb(var(--colorBackground));
-  font-family: var(--fontBase);
-  font-size: var(--fontSize);
-  color: rgb(var(--colorText));
+.table {
+  margin-bottom: 0 !important;
 }
-html.auth, body.auth {
+
+body.auth {
   background: #f8fafc;
   margin-bottom: 0 !important;
 }
-html.auth .payview-logo, body.auth .payview-logo {
+body.auth .payview-logo {
   color: rgb(var(--colorText));
   text-decoration: none;
   margin: 0 0 25px 0;
   font-size: 25px;
   font-weight: 500;
 }
-html.auth .no-account, body.auth .no-account {
+body.auth .no-account {
   color: #626976;
   font-size: 13px;
 }
-html.auth .no-account a, body.auth .no-account a {
+body.auth .no-account a {
   color: #0d6efd;
   text-decoration: none;
 }
-html.auth .no-account a:hover, body.auth .no-account a:hover {
+body.auth .no-account a:hover {
   text-decoration: underline;
 }
-html.auth .auth-card, body.auth .auth-card {
+body.auth .auth-card {
   box-shadow: rgba(30, 41, 59, 0.04) 0 2px 4px 0;
   border: 1px solid rgba(98, 105, 118, 0.16);
   word-wrap: break-word;
@@ -68,13 +64,13 @@ html.auth .auth-card, body.auth .auth-card {
   margin: 0 0 20px 0;
   overflow: hidden;
 }
-html.auth .auth-card .hr-text, body.auth .auth-card .hr-text {
+body.auth .auth-card .hr-text {
   margin: 0;
 }
-html.auth .auth-card .auth-card-body, body.auth .auth-card .auth-card-body {
+body.auth .auth-card .auth-card-body {
   padding: 20px;
 }
-html.auth .auth-card .auth-card-body.error, body.auth .auth-card .auth-card-body.error {
+body.auth .auth-card .auth-card-body.error {
   border-top: 1px solid #f5c2c7;
   border-bottom: 1px solid #f5c2c7;
   margin: 10px 0 0 0;
@@ -83,44 +79,247 @@ html.auth .auth-card .auth-card-body.error, body.auth .auth-card .auth-card-body
   font-size: 12px;
   padding: 15px 20px;
 }
-html.auth .auth-card .auth-card-body.error li, body.auth .auth-card .auth-card-body.error li {
+body.auth .auth-card .auth-card-body.error li {
   list-style-type: none;
 }
-html.auth .auth-card .auth-card-body.error strong, body.auth .auth-card .auth-card-body.error strong {
+body.auth .auth-card .auth-card-body.error strong {
   display: block;
   font-size: 13px;
 }
-html.auth .auth-card .auth-card-body.error.success, body.auth .auth-card .auth-card-body.error.success {
+body.auth .auth-card .auth-card-body.error.success {
   border-top: 1px solid #badbcc;
   border-bottom: 1px solid #badbcc;
   background: #d1e7dd;
   color: #0f5132;
 }
-html.auth .auth-card .auth-card-body.extra-padding, body.auth .auth-card .auth-card-body.extra-padding {
+body.auth .auth-card .auth-card-body.extra-padding {
   padding: 30px 20px 10px 20px;
 }
-html.auth .auth-card .auth-card-body h2, body.auth .auth-card .auth-card-body h2 {
+body.auth .auth-card .auth-card-body h2 {
   display: block;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5rem;
 }
-html.auth .auth-card .auth-card-body p, body.auth .auth-card .auth-card-body p {
+body.auth .auth-card .auth-card-body p {
   margin: 0;
   padding: 0;
   font-size: 12px;
   color: #666666;
 }
-html.auth .auth-card .auth-card-body.border-bottom, body.auth .auth-card .auth-card-body.border-bottom {
+body.auth .auth-card .auth-card-body.border-bottom {
   border-bottom: 1px solid rgba(101, 109, 119, 0.16);
 }
-html.auth .auth-card .auth-card-body .form-label, body.auth .auth-card .auth-card-body .form-label {
+body.auth .auth-card .auth-card-body .form-label {
   margin-bottom: 0.5rem;
   font-weight: 500;
   color: #1e293b;
 }
-html.auth .auth-card .auth-card-body .btn, body.auth .auth-card .auth-card-body .btn {
+body.auth .auth-card .auth-card-body .btn {
   padding: 10px;
+}
+
+.app-card {
+  box-shadow: rgba(30, 41, 59, 0.04) 0 2px 4px 0;
+  border: 1px solid rgba(98, 105, 118, 0.16);
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border-radius: 5px;
+  margin: 0 0 20px 0;
+  overflow: hidden;
+}
+.app-card.height-93 {
+  height: 93px;
+  overflow: hidden;
+}
+.app-card .app-card-header {
+  border-bottom: 1px solid rgba(101, 109, 119, 0.16);
+  padding: 20px;
+  font-weight: 500;
+}
+.app-card .app-card-header a {
+  float: right;
+  margin-top: -2.5px;
+  border-radius: 5px;
+}
+.app-card .app-card-body {
+  padding: 20px;
+}
+.app-card .app-card-body.transactions {
+  padding: 0;
+}
+.app-card .app-card-body.transactions .transaction-item {
+  padding: 20px;
+  height: 83px;
+  border-bottom: 1px solid rgba(101, 109, 119, 0.16);
+}
+.app-card .app-card-body.transactions .transaction-item .text-right {
+  text-align: right;
+}
+.app-card .app-card-body.transactions .transaction-item p {
+  margin: 0;
+  padding: 0;
+}
+.app-card .app-card-body.transactions .transaction-item p.type {
+  font-weight: 400;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.7);
+  text-transform: capitalize;
+}
+.app-card .app-card-body.transactions .transaction-item p.amount {
+  font-weight: 600;
+  font-size: 16px;
+  display: block;
+}
+.app-card .app-card-body.transactions .transaction-item p.category {
+  margin-top: 2px;
+}
+.app-card .app-card-body.transactions .transaction-item p.date {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.4);
+}
+.app-card .app-card-body.transactions .transaction-item .icon {
+  float: left;
+  width: 45px;
+  height: 45px;
+  margin: 0 15px 0 0;
+  border-radius: 5px;
+  box-shadow: rgba(30, 41, 59, 0.04) 0 2px 4px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #d3d6d8;
+  background-color: #e2e3e5;
+  color: #41464b;
+}
+.app-card .app-card-body.transactions .transaction-item .icon i {
+  display: inline-block;
+  vertical-align: middle;
+  -ms-interpolation-mode: nearest-neighbor;
+      image-rendering: -moz-crisp-edges;
+      image-rendering: pixelated;
+  font-size: 14px;
+}
+.app-card .app-card-body.transactions .transaction-item .icon.green {
+  border: 1px solid #badbcc;
+  background-color: #d1e7dd;
+  color: #0f5132;
+}
+.app-card .app-card-body.transactions .transaction-item .icon.red {
+  border: 1px solid #f5c2c7;
+  background-color: #f8d7da;
+  color: #842029;
+}
+.app-card .app-card-body.transactions .transaction-item .icon.yellow {
+  border: 1px solid #ffecb5;
+  background-color: #fff3cd;
+  color: #664d03;
+}
+.app-card .app-card-body.transactions .transaction-item:last-child {
+  border-bottom: 0;
+}
+.app-card .app-card-body.info i {
+  float: right;
+  font-size: 140px;
+  margin: -104px -75px 0 0;
+  opacity: 0.6;
+  color: rgba(0, 0, 0, 0.1);
+}
+.app-card .app-card-body.info p {
+  margin: 0;
+  padding: 0;
+}
+.app-card .app-card-body.info p.info {
+  color: rgba(0, 0, 0, 0.7);
+}
+.app-card .app-card-body.info p.fullname {
+  font-weight: 600;
+  font-size: 20px;
+}
+.app-card .app-card-body.info p.time {
+  float: right;
+  font-size: 13px;
+  text-align: right;
+  margin-top: -45px;
+}
+.app-card .app-card-body.info p.time strong {
+  display: block;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 600;
+}
+.app-card .app-card-body.stats .icon {
+  float: left;
+  width: 45px;
+  height: 45px;
+  margin: 0 15px 0 0;
+  border-radius: 5px;
+  box-shadow: rgba(30, 41, 59, 0.04) 0 2px 4px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.app-card .app-card-body.stats .icon i {
+  display: inline-block;
+  vertical-align: middle;
+  -ms-interpolation-mode: nearest-neighbor;
+      image-rendering: -moz-crisp-edges;
+      image-rendering: pixelated;
+  font-size: 18px;
+}
+.app-card .app-card-body.stats .icon.green {
+  border: 1px solid #badbcc;
+  background-color: #d1e7dd;
+  color: #0f5132;
+}
+.app-card .app-card-body.stats .icon.red {
+  border: 1px solid #f5c2c7;
+  background-color: #f8d7da;
+  color: #842029;
+}
+.app-card .app-card-body.stats .icon.yellow {
+  border: 1px solid #ffecb5;
+  background-color: #fff3cd;
+  color: #664d03;
+}
+.app-card .app-card-body.stats .icon.grey {
+  border: 1px solid #d3d6d8;
+  background-color: #e2e3e5;
+  color: #41464b;
+}
+.app-card .app-card-body.stats p {
+  margin: 0;
+  padding: 0;
+}
+.app-card .app-card-body.stats p.title {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.app-card .app-card-body.stats p.month {
+  float: right;
+  display: inline-block;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.3);
+  margin-top: 1px;
+}
+.app-card .app-card-body.stats p.amount {
+  font-weight: 600;
+  font-size: 16px;
+  display: block;
+}
+.app-card .app-card-body.stats p.amount.red {
+  color: #842029;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: rgb(var(--colorBackground));
+  font-family: var(--fontBase);
+  font-size: var(--fontSize);
+  color: rgb(var(--colorText));
 }
 
 .hr-text {
@@ -150,4 +349,33 @@ html.auth .auth-card .auth-card-body .btn, body.auth .auth-card .auth-card-body 
   height: 1px;
   background-color: currentColor;
   opacity: 0.16;
+}
+
+header ul li button {
+  background: none;
+  border: none;
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
+}
+header ul li button i {
+  font-size: 20px;
+}
+header ul li button:hover {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+}
+header ul li:hover a {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+}
+header ul li a {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
+}
+header ul li a.active {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+}
+header ul li a i {
+  font-size: 20px;
 }

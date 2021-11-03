@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTransactionTable extends Migration
+class CreateCategoriesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,12 @@ class CreateTransactionTable extends Migration
      */
     public function up()
     {
-        Schema::create('transaction', function (Blueprint $table) {
+        Schema::create('categories', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user');
-            $table->foreignId('category');
-            $table->string('type');
-            $table->string('amount');
-            $table->string('month');
-            $table->string('year');
+            $table->string('icon');
+            $table->string('name');
+            $table->mediumText('description');
             $table->timestamps();
         });
     }
@@ -32,6 +30,6 @@ class CreateTransactionTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('transaction');
+        Schema::dropIfExists('categories');
     }
 }
