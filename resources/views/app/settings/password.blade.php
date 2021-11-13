@@ -2,9 +2,6 @@
 @section('pagename', __('payview.pagename.settings'))
 
 @section('content')
-<<<<<<< Updated upstream
-    Password
-=======
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-6">
@@ -60,5 +57,4 @@
             </div>
         </div>
     </div>
->>>>>>> Stashed changes
 @endsection

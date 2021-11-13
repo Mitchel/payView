@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 .btn {
     &.float-right {
         float: right;
@@ -9,7 +7,6 @@
     }
 }
 
->>>>>>> Stashed changes
 .app-card {
     box-shadow: rgb(30 41 59 / 4%) 0 2px 4px 0;
     border: 1px solid rgba(98, 105, 118, .16);
@@ -20,8 +17,6 @@
     margin: 0 0 20px 0;
     overflow: hidden;
 
-<<<<<<< Updated upstream
-=======
     a {
         color: rgb(var(--colorText));
         text-decoration: none;
@@ -43,7 +38,6 @@
         color: #fff;
     }
 
->>>>>>> Stashed changes
     &.height-93 {
         height: 93px;
         overflow: hidden;
@@ -58,8 +52,6 @@
             float: right;
             margin-top: -2.5px;
             border-radius: 5px;
-<<<<<<< Updated upstream
-=======
             margin-left: 10px;
         }
 
@@ -75,20 +67,18 @@
                     display: inline-block;
                 }
             }
->>>>>>> Stashed changes
         }
     }
 
     .app-card-body {
         padding: 20px;
 
-<<<<<<< Updated upstream
         &.transactions {
             padding: 0;
 
-=======
-        strong {
-            font-weight: 600;
+            strong {
+                font-weight: 600;
+            }
         }
 
         &.categories {
@@ -193,7 +183,6 @@
                 max-height: 545px;
             }
 
->>>>>>> Stashed changes
             .transaction-item {
                 padding: 20px;
                 height: 83px;
@@ -230,8 +219,6 @@
                     }
                 }
 
-<<<<<<< Updated upstream
-=======
                 .info-right {
                     margin: 0 120px 0 0;
                 }
@@ -259,7 +246,6 @@
                     }
                 }
 
->>>>>>> Stashed changes
                 .icon {
                     float: left;
                     width: 45px;
@@ -306,8 +292,6 @@
             }
         }
 
-<<<<<<< Updated upstream
-=======
         &.monthly {
             a {
                 text-transform: capitalize;
@@ -347,7 +331,6 @@
             }
         }
 
->>>>>>> Stashed changes
         &.info {
 
             i {
@@ -356,8 +339,6 @@
                 margin: -104px -75px 0 0;
                 opacity: 0.6;
                 color: rgba(0,0,0,.1);
-<<<<<<< Updated upstream
-=======
                 display: inline-block;
             }
 
@@ -367,7 +348,6 @@
                 border-radius: 5px;
                 margin-left: 10px;
                 display: inline-block;
->>>>>>> Stashed changes
             }
 
             p {

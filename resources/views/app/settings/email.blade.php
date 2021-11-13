@@ -2,12 +2,6 @@
 @section('pagename', __('payview.pagename.settings'))
 
 @section('content')
-<<<<<<< Updated upstream:resources/views/app/settings/email.blade.php
-    Email
-=======
-<<<<<<< Updated upstream:resources/views/app/settings.blade.php
-    @lang('payview.pagename.settings')
-=======
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-6">
@@ -63,6 +57,4 @@
             </div>
         </div>
     </div>
->>>>>>> Stashed changes:resources/views/app/settings/email.blade.php
->>>>>>> Stashed changes:resources/views/app/settings.blade.php
 @endsection

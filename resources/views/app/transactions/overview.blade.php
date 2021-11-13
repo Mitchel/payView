@@ -2,13 +2,6 @@
 @section('pagename', __('payview.pagename.transactions.overview'))
 
 @section('content')
-<<<<<<< Updated upstream
-    @forelse($transactions as $transaction)
-        <li>{{ $transaction->month }} / {{ $transaction->Category->name }} / {{ $transaction->Category->description }}</li>
-    @empty
-        niks te zien flikker.
-    @endforelse
-=======
 
     <div class="container">
 
@@ -104,5 +97,4 @@
             </div>
         </div>
     </div>
->>>>>>> Stashed changes
 @endsection

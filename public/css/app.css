@@ -119,10 +119,6 @@ body.auth .auth-card .auth-card-body .btn {
   padding: 10px;
 }
 
-<<<<<<< Updated upstream
-=======
-<<<<<<< Updated upstream
-=======
 .btn.float-right {
   float: right;
   display: block;
@@ -130,7 +126,6 @@ body.auth .auth-card .auth-card-body .btn {
   position: relative;
 }
 
->>>>>>> Stashed changes
 .app-card {
   box-shadow: rgba(30, 41, 59, 0.04) 0 2px 4px 0;
   border: 1px solid rgba(98, 105, 118, 0.16);
@@ -141,8 +136,6 @@ body.auth .auth-card .auth-card-body .btn {
   margin: 0 0 20px 0;
   overflow: hidden;
 }
-<<<<<<< Updated upstream
-=======
 .app-card a {
   color: rgb(var(--colorText));
   text-decoration: none;
@@ -156,7 +149,6 @@ body.auth .auth-card .auth-card-body .btn {
 .app-card .btn {
   color: #fff;
 }
->>>>>>> Stashed changes
 .app-card.height-93 {
   height: 93px;
   overflow: hidden;
@@ -170,8 +162,6 @@ body.auth .auth-card .auth-card-body .btn {
   float: right;
   margin-top: -2.5px;
   border-radius: 5px;
-<<<<<<< Updated upstream
-=======
   margin-left: 10px;
 }
 .app-card .app-card-header p.right {
@@ -183,17 +173,14 @@ body.auth .auth-card .auth-card-body .btn {
 }
 .app-card .app-card-header p.right b {
   display: inline-block;
->>>>>>> Stashed changes
 }
 .app-card .app-card-body {
   padding: 20px;
 }
-<<<<<<< Updated upstream
 .app-card .app-card-body.transactions {
   padding: 0;
 }
-=======
-.app-card .app-card-body strong {
+.app-card .app-card-body.transactions strong {
   font-weight: 600;
 }
 .app-card .app-card-body.categories {
@@ -280,7 +267,6 @@ body.auth .auth-card .auth-card-body .btn {
   overflow-y: scroll;
   max-height: 545px;
 }
->>>>>>> Stashed changes
 .app-card .app-card-body.transactions .transaction-item {
   padding: 20px;
   height: 83px;
@@ -311,8 +297,6 @@ body.auth .auth-card .auth-card-body .btn {
   font-size: 13px;
   color: rgba(0, 0, 0, 0.4);
 }
-<<<<<<< Updated upstream
-=======
 .app-card .app-card-body.transactions .transaction-item .info-right {
   margin: 0 120px 0 0;
 }
@@ -339,7 +323,6 @@ body.auth .auth-card .auth-card-body .btn {
       image-rendering: pixelated;
   font-size: 14px;
 }
->>>>>>> Stashed changes
 .app-card .app-card-body.transactions .transaction-item .icon {
   float: left;
   width: 45px;
@@ -380,8 +363,6 @@ body.auth .auth-card .auth-card-body .btn {
 .app-card .app-card-body.transactions .transaction-item:last-child {
   border-bottom: 0;
 }
-<<<<<<< Updated upstream
-=======
 .app-card .app-card-body.monthly a {
   text-transform: capitalize;
   margin: 0 0 7.5px 0;
@@ -412,15 +393,12 @@ body.auth .auth-card .auth-card-body .btn {
   color: rgba(0, 0, 0, 0.7);
   font-weight: 600;
 }
->>>>>>> Stashed changes
 .app-card .app-card-body.info i {
   float: right;
   font-size: 140px;
   margin: -104px -75px 0 0;
   opacity: 0.6;
   color: rgba(0, 0, 0, 0.1);
-<<<<<<< Updated upstream
-=======
   display: inline-block;
 }
 .app-card .app-card-body.info a {
@@ -429,7 +407,6 @@ body.auth .auth-card .auth-card-body .btn {
   border-radius: 5px;
   margin-left: 10px;
   display: inline-block;
->>>>>>> Stashed changes
 }
 .app-card .app-card-body.info p {
   margin: 0;
@@ -527,10 +504,6 @@ html, body {
   color: rgb(var(--colorText));
 }
 
-<<<<<<< Updated upstream
-=======
->>>>>>> Stashed changes
->>>>>>> Stashed changes
 .hr-text {
   display: flex;
   align-items: center;

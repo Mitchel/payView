@@ -2,16 +2,6 @@
 
 return [
     'pagename' => [
-<<<<<<< Updated upstream
-=======
-<<<<<<< Updated upstream
-        'login'             => 'Login with your account',
-        'register'          => 'Create an account',
-        'activate'          => 'Activate your account',
-        'dashboard'         => 'Dashboard',
-        'settings'          => 'Settings',
-=======
->>>>>>> Stashed changes
         'login'                 => 'Login with your account',
         'register'              => 'Create an account',
         'activate'              => 'Activate your account',
@@ -21,9 +11,6 @@ return [
             'overview'          => 'Transactions Overview',
             'month'             => 'Transactions: :month',
             'year'              => 'Transactions: :year',
-<<<<<<< Updated upstream
-        ],
-=======
             'edit'              => 'Edit the transaction',
         ],
     ],
@@ -55,8 +42,6 @@ return [
                 'add'           => 'Add transaction',
             ],
         ],
->>>>>>> Stashed changes
->>>>>>> Stashed changes
     ],
 
     'auth' => [
