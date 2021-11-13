@@ -26,10 +26,23 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         Schema::defaultStringLength(191);
+<<<<<<< Updated upstream
 
         view()->composer('*', function($view) {
             $view->with('user', User::where('id', auth()->user()->id)->firstOrFail());
             $view->with('payView', '\App\Http\Controllers\Helpers\PayViewController');
         });
+=======
+<<<<<<< Updated upstream
+=======
+
+        view()->composer('*', function($view) {
+            if(auth()->user()) {
+                $view->with('user', User::where('id', auth()->user()->id)->firstOrFail());
+            }
+            $view->with('payView', '\App\Http\Controllers\Helpers\PayViewController');
+        });
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
     }
 }

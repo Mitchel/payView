@@ -2,6 +2,16 @@
 
 return [
     'pagename' => [
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+        'login'             => 'Login with your account',
+        'register'          => 'Create an account',
+        'activate'          => 'Activate your account',
+        'dashboard'         => 'Dashboard',
+        'settings'          => 'Settings',
+=======
+>>>>>>> Stashed changes
         'login'                 => 'Login with your account',
         'register'              => 'Create an account',
         'activate'              => 'Activate your account',
@@ -11,7 +21,42 @@ return [
             'overview'          => 'Transactions Overview',
             'month'             => 'Transactions: :month',
             'year'              => 'Transactions: :year',
+<<<<<<< Updated upstream
         ],
+=======
+            'edit'              => 'Edit the transaction',
+        ],
+    ],
+
+    'dashboard' => [
+        'welcome'               => 'Welcome back,',
+        'today'                 => 'Lets talk about today,',
+        'statics' => [
+            'revenue'           => 'Revenue',
+            'expenses'          => 'Expenses',
+            'reservations'      => 'Reservations',
+            'balance'           => 'Balance',
+        ],
+        'subscriptions' => [
+            'title'             => 'Most recent subscription(s)',
+            'euro'              => '&euro;',
+            'nothing'           => 'Currently you don\'t have any subscriptions, so we can\'t show you these either.',
+            'button' => [
+                'view'          => 'View all',
+                'add'           => 'Add subscription',
+            ],
+        ],
+        'transactions' => [
+            'title'             => 'Most recent transaction(s)',
+            'euro'              => '&euro;',
+            'nothing'           => 'Currently you don\'t have any transactions, so we can\'t show you these either.',
+            'button' => [
+                'view'          => 'View all',
+                'add'           => 'Add transaction',
+            ],
+        ],
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
     ],
 
     'auth' => [
@@ -53,6 +98,44 @@ return [
 
         'logout' => [
             'success'           => 'You have just been successfully logged out, hopefully we will see you again soon!',
+        ],
+    ],
+
+    'transactions' => [
+        'title'                 => 'Lets talk about transactions,',
+        'title-specific'        => 'Lets talk about specific transactions for the month,',
+        'title-specific-year'   => 'Lets talk about specific transactions for the year,',
+        'overview'              => 'Overview',
+        'success'               => 'Your transaction has been successfully modified!',
+        'delete'                => 'Your transaction has been successfully removed!',
+        'month' => [
+            'jan'               => 'january',
+            'feb'               => 'february',
+            'mar'               => 'march',
+            'apr'               => 'april',
+            'may'               => 'may',
+            'jun'               => 'june',
+            'jul'               => 'july',
+            'aug'               => 'august',
+            'sep'               => 'september',
+            'oct'               => 'october',
+            'nov'               => 'november',
+            'dec'               => 'december',
+        ],
+    ],
+
+    'settings' => [
+        'title'                 => 'Lets talk about settings,',
+        'overview'              => 'Overview',
+        'email' => [
+            'title'             => 'E-mail',
+            'edit'              => 'Edit you\'re e-mail'
+        ],
+        'information'           => 'Information about your settings',
+        'text'                  => 'Within payView you have several settings that you can adjust to your liking. Currently you are visiting the overview page where there are no settings. On the left side of this page you will find a menu where you can go to the desired page with the specific settings.',
+        'password' => [
+            'title'             => 'Password',
+            'edit'              => 'Edit you\'re password'
         ],
     ],
 ];

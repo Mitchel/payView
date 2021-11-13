@@ -27,6 +27,13 @@ Route::prefix('auth')->name('auth.')->group(function () {
 });
 
 Route::prefix('app')->name('app.')->group(function () {
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+    Route::get('dashboard', [AppController::class, 'dashboard'])->name('dashboard');
+    Route::get('settings', [AppController::class, 'settings'])->name('settings');
+=======
+>>>>>>> Stashed changes
     Route::get('/', [AppController::class, 'dashboard'])->name('dashboard');
 
     Route::prefix('settings')->name('settings.')->group(function () {
@@ -39,5 +46,13 @@ Route::prefix('app')->name('app.')->group(function () {
         Route::get('/', [AppController::class, 'transactions'])->name('overview');
         Route::get('month/{month}', [AppController::class, 'transactionsMonth'])->name('month');
         Route::get('year/{year}', [AppController::class, 'transactionsYear'])->name('year');
+<<<<<<< Updated upstream
     });
+=======
+        Route::match(array('get', 'post'), 'create', [AppController::class, 'transactionCreate'])->name('create');
+        Route::match(array('get', 'post'), 'edit/{id}', [AppController::class, 'transactionEdit'])->name('edit');
+        Route::match(array('get', 'post'), 'delete/{id}', [AppController::class, 'transactionDelete'])->name('delete');
+    });
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 });

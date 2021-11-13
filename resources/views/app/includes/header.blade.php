@@ -8,19 +8,31 @@
 
                 <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
                     <li>
+<<<<<<< Updated upstream
                         <a href="{{ route('app.dashboard') }}" class="nav-link active">
+=======
+                        <a href="{{ route('app.dashboard') }}" class="nav-link {{ checkActive('app.dashboard') }}">
+>>>>>>> Stashed changes
                             <i class="far fa-home fa-fw d-block mx-auto mb-2"></i>
                             Dashboard
                         </a>
                     </li>
                     <li>
+<<<<<<< Updated upstream
                         <a href="{{ route('app.transactions.overview') }}" class="nav-link">
+=======
+                        <a href="{{ route('app.transactions.overview') }}" class="nav-link {{ checkActive('app.transactions.overview') }}">
+>>>>>>> Stashed changes
                             <i class="far fa-analytics fa-fw d-block mx-auto mb-2"></i>
                             Transactions
                         </a>
                     </li>
                     <li>
+<<<<<<< Updated upstream
                         <a href="{{ route('app.settings.overview') }}" class="nav-link">
+=======
+                        <a href="{{ route('app.settings.overview') }}" class="nav-link {{ checkActive('app.settings.overview') }}">
+>>>>>>> Stashed changes
                             <i class="far fa-cog fa-fw d-block mx-auto mb-2"></i>
                             Settings
                         </a>

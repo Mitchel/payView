@@ -13,6 +13,13 @@ class Transactions extends Model
       'user'
     ];
 
+<<<<<<< Updated upstream
+=======
+    protected $fillable = [
+        'user', 'category', 'type', 'amount', 'day', 'month', 'year'
+    ];
+
+>>>>>>> Stashed changes
     public function category()
     {
         return $this->belongsTo(Categories::class, 'category','id');

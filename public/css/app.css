@@ -119,6 +119,18 @@ body.auth .auth-card .auth-card-body .btn {
   padding: 10px;
 }
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+=======
+.btn.float-right {
+  float: right;
+  display: block;
+  margin: 0 0 20px 0;
+  position: relative;
+}
+
+>>>>>>> Stashed changes
 .app-card {
   box-shadow: rgba(30, 41, 59, 0.04) 0 2px 4px 0;
   border: 1px solid rgba(98, 105, 118, 0.16);
@@ -129,6 +141,22 @@ body.auth .auth-card .auth-card-body .btn {
   margin: 0 0 20px 0;
   overflow: hidden;
 }
+<<<<<<< Updated upstream
+=======
+.app-card a {
+  color: rgb(var(--colorText));
+  text-decoration: none;
+}
+.app-card a:hover .app-card-body {
+  background: rgba(0, 0, 0, 0.03);
+}
+.app-card a .app-card-body.active {
+  background: rgba(0, 0, 0, 0.03);
+}
+.app-card .btn {
+  color: #fff;
+}
+>>>>>>> Stashed changes
 .app-card.height-93 {
   height: 93px;
   overflow: hidden;
@@ -142,13 +170,117 @@ body.auth .auth-card .auth-card-body .btn {
   float: right;
   margin-top: -2.5px;
   border-radius: 5px;
+<<<<<<< Updated upstream
+=======
+  margin-left: 10px;
+}
+.app-card .app-card-header p.right {
+  float: right;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 11px;
+  margin: 4px 0 0 0;
+}
+.app-card .app-card-header p.right b {
+  display: inline-block;
+>>>>>>> Stashed changes
 }
 .app-card .app-card-body {
   padding: 20px;
 }
+<<<<<<< Updated upstream
 .app-card .app-card-body.transactions {
   padding: 0;
 }
+=======
+.app-card .app-card-body strong {
+  font-weight: 600;
+}
+.app-card .app-card-body.categories {
+  padding: 0;
+}
+.app-card .app-card-body.categories ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.app-card .app-card-body.categories ul li {
+  padding: 20px;
+  border-bottom: 1px solid rgba(101, 109, 119, 0.16);
+}
+.app-card .app-card-body.categories ul li .text-right {
+  text-align: right;
+}
+.app-card .app-card-body.categories ul li:last-child {
+  border-bottom: 0;
+}
+.app-card .app-card-body.categories ul li p {
+  margin: 0;
+}
+.app-card .app-card-body.categories ul li p strong {
+  display: block;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.app-card .app-card-body.error {
+  border: 1px solid #f5c2c7;
+  background: #f8d7da;
+  color: #842026;
+  font-size: 12px;
+  padding: 15px 20px;
+  height: 70px;
+  overflow: hidden;
+}
+.app-card .app-card-body.error i {
+  float: right;
+  font-size: 140px;
+  margin: -70px -75px 0 0;
+  opacity: 0.6;
+  color: rgba(0, 0, 0, 0.1);
+  display: inline-block;
+}
+.app-card .app-card-body.error li {
+  list-style-type: none;
+}
+.app-card .app-card-body.error strong {
+  display: block;
+  font-size: 13px;
+}
+.app-card .app-card-body.error.info {
+  color: #084298;
+  background: #cfe2ff;
+  border: 1px solid #b6d4fe;
+}
+.app-card .app-card-body.error.info kbd {
+  background-color: #084298;
+}
+.app-card .app-card-body.error.info p {
+  width: 90%;
+}
+.app-card .app-card-body.error.info i {
+  color: rgba(8, 66, 152, 0.2);
+}
+.app-card .app-card-body.error.success {
+  border: 1px solid #badbcc;
+  background: #d1e7dd;
+  color: #0f5132;
+}
+.app-card .app-card-body .nothing {
+  padding: 20px;
+}
+.app-card .app-card-body .nothing a {
+  color: rgb(var(--colorText));
+}
+.app-card .app-card-body.transactions {
+  padding: 0;
+}
+.app-card .app-card-body.transactions.overview {
+  overflow-y: scroll;
+  max-height: 545px;
+}
+>>>>>>> Stashed changes
 .app-card .app-card-body.transactions .transaction-item {
   padding: 20px;
   height: 83px;
@@ -179,6 +311,35 @@ body.auth .auth-card .auth-card-body .btn {
   font-size: 13px;
   color: rgba(0, 0, 0, 0.4);
 }
+<<<<<<< Updated upstream
+=======
+.app-card .app-card-body.transactions .transaction-item .info-right {
+  margin: 0 120px 0 0;
+}
+.app-card .app-card-body.transactions .transaction-item .btn-action {
+  float: right;
+  width: 45px;
+  height: 45px;
+  margin: -41px 0 0 15px;
+  border-radius: 5px;
+  box-shadow: rgba(30, 41, 59, 0.04) 0 2px 4px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #d3d6d8;
+  background-color: #e2e3e5;
+  color: #41464b;
+  text-decoration: none;
+}
+.app-card .app-card-body.transactions .transaction-item .btn-action i {
+  display: inline-block;
+  vertical-align: middle;
+  -ms-interpolation-mode: nearest-neighbor;
+      image-rendering: -moz-crisp-edges;
+      image-rendering: pixelated;
+  font-size: 14px;
+}
+>>>>>>> Stashed changes
 .app-card .app-card-body.transactions .transaction-item .icon {
   float: left;
   width: 45px;
@@ -219,12 +380,56 @@ body.auth .auth-card .auth-card-body .btn {
 .app-card .app-card-body.transactions .transaction-item:last-child {
   border-bottom: 0;
 }
+<<<<<<< Updated upstream
+=======
+.app-card .app-card-body.monthly a {
+  text-transform: capitalize;
+  margin: 0 0 7.5px 0;
+}
+.app-card .app-card-body.monthly .no-margin {
+  margin: 0;
+}
+.app-card .app-card-body.monthly p {
+  margin: 0;
+  padding: 0;
+}
+.app-card .app-card-body.monthly p.info {
+  color: rgba(0, 0, 0, 0.7);
+}
+.app-card .app-card-body.monthly p.fullname {
+  font-weight: 600;
+  font-size: 20px;
+  margin: 0 0 10px 0;
+}
+.app-card .app-card-body.monthly p.time {
+  float: right;
+  font-size: 13px;
+  text-align: right;
+  margin-top: -45px;
+}
+.app-card .app-card-body.monthly p.time strong {
+  display: block;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 600;
+}
+>>>>>>> Stashed changes
 .app-card .app-card-body.info i {
   float: right;
   font-size: 140px;
   margin: -104px -75px 0 0;
   opacity: 0.6;
   color: rgba(0, 0, 0, 0.1);
+<<<<<<< Updated upstream
+=======
+  display: inline-block;
+}
+.app-card .app-card-body.info a {
+  float: right;
+  margin-top: -43px;
+  border-radius: 5px;
+  margin-left: 10px;
+  display: inline-block;
+>>>>>>> Stashed changes
 }
 .app-card .app-card-body.info p {
   margin: 0;
@@ -322,6 +527,10 @@ html, body {
   color: rgb(var(--colorText));
 }
 
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 .hr-text {
   display: flex;
   align-items: center;
